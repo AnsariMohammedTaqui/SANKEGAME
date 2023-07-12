@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Rubik+Gemstones&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../bg\ snake.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Megrim';
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 50px;
+    right: 169px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Rubik Gemstones';
+    font-size: 2rem;
+}
+
+#board {
+    background: linear-gradient(rgb(172, 210, 105), rgb(80, 179, 60));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    position: relative;
+    right: 216px;
+}
+
+.head {
+    background: linear-gradient(rgb(238, 1, 1), rgb(243, 243, 8));
+    border: 2px solid rgb(34, 4, 34);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake {
+    background-color: rgb(247, 166, 15);
+    border: .25vmin solid rgb(10, 6, 6);
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(rgb(3, 218, 200), rgb(231, 126, 231));
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
